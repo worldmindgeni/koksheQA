@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KoksheQA - Контакты</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>KoksheQA</h1>
+        </div>
+        <button id="menu-toggle">☰</button>
+        <a href="contact.html" class="cta-btn">Связаться с нами</a>
+    </header>
+
+    <nav id="sidebar" class="sidebar">
+        <button id="close-btn">✖</button>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+            <li><a href="functional-testing.html">Функциональное тестирование</a></li>
+            <li><a href="performance-testing.html">Тестирование производительности</a></li>
+            <li><a href="automated-testing.html">Автоматизированное тестирование</a></li>
+            <li><a href="security-testing.html">Тестирование безопасности</a></li>
+            <li><a href="support-monitoring.html">Поддержка и мониторинг</a></li>
+            <li><a href="consulting.html">Консалтинг</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact">
+        <h2>Свяжитесь с нами</h2>
+        <form id="contact-form">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Сообщение:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+        <p id="form-message" style="display:none;"></p>
+    </section>
+
+    <footer>
+        <p>Контакты: info@koksheqa.com | +7 123 456 7890</p>
+        <p>© 2024 KoksheQA. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

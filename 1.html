@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KoksheQA - Агентство тестирования и поддержки ПО</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #007bff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service {
+            text-align: center;
+            margin: 10px;
+            padding: 20px;
+            background: #e9ecef;
+            border-radius: 5px;
+            width: 30%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .service:hover {
+            transform: scale(1.05);
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form input[type="submit"] {
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-form input[type="submit"]:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>KoksheQA</h1>
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#services">Услуги</a>
+        <a href="#about">О нас</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Добро пожаловать в KoksheQA</h2>
+    <p style="text-align: center;">Агентство тестирования и поддержки ПО, обеспечивающее высокое качество программных решений.</p>
+    <img src="team-image.jpg" alt="Наша команда" style="width:100%; max-width:600px; display: block; margin: 0 auto;">
+</section>
+
+<section id="services">
+    <h2>Наши услуги</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Функциональное тестирование</h3>
+            <p>Проверка всех функций ПО на соответствие требованиям.</p>
+        </div>
+        <div class="service">
+            <h3>Автоматизированное тестирование</h3>
+            <p>Создание скриптов для автоматизации рутинных задач.</p>
+        </div>
+        <div class="service">
+            <h3>Техническая поддержка</h3>
+            <p>Постоянная поддержка и мониторинг работоспособности систем.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>О нас</h2>
+    <p style="text-align: center;">Мы команда профессионалов, стремящихся обеспечить высокое качество тестирования и поддержки программного обеспечения.</p>
+</section>
+
+<section id="contact">
+    <h2>Контакты</h2>
+    <form class="contact-form">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" required></textarea>
+        <input type="submit" value="Отправить">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 KoksheQA. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
